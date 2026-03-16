@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container {
+    max-width: 750px;
+    text-align: center;
+    border: black 1px solid;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.square {
+    position: absolute;
+    border: black 1px solid;
+    width: 20px;
+    height: 20px;
+}
+
+.part {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#generate {
+    width: 50%;
+}

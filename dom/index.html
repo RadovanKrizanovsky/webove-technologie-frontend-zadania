@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objednavka</title>
+    <link rel="stylesheet" href="vendor/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <form id="wholeForm" action="https://form2mail.hynix.sk/form2mail.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="apikey" value="SENSITIVE_INFORMATION">
+        <input type="hidden" name="from" value="SENSITIVE_INFORMATION">
+        <input type="hidden" name="sender" value="SENSITIVE_INFORMATION">
+        <input type="hidden" name="to" value="SENSITIVE_INFORMATION">
+        <input type="hidden" name="subject" value="Objednávka">
+        <input type="hidden" name="redirectOk" value="https://webte1.fei.stuba.sk/~xkrizanovsky/webteJednaDruheZadanie/">
+        <input type="hidden" name="redirectFalse" value="https://webte1.fei.stuba.sk/~xkrizanovsky/webteJednaDruheZadanie/">
+        <div id="partsWraper">
+            <div id="leftUpperPart" class="customCollums">
+                <div class="formElement">
+                    <label for="formName">Meno*</label>
+                    <input name="userName" type="text" id="formName" placeholder="Filip" maxlength="20" required>
+                    <div><small id="nameCharactersNum">(0/20)</small></div>
+                    <div id="nameError" class="errorForInput"></div>
+                </div>
+
+                <div class="formElement">
+                    <label for="formSurname">Priezvisko*</label>
+                    <input name="userSurname" type="text" id="formSurname" placeholder="Varga" maxlength="20" required>
+                    <div ><small id="surnameCharactersNum">(0/20)</small></div>
+                    <div id="surnameError" class="errorForInput"></div>
+                </div>
+        
+                <div id="genders" class="formElement">
+                    <h3>Pohlavie*</h3>
+                    <input type="radio" id="man" name="gender" value="Muž" required>
+                    <label for="man">Muž</label><br>
+                    <input type="radio" id="woman" name="gender" value="Žena" required>
+                    <label for="woman"> Žena</label><br>
+                    <input type="radio" id="other" name="gender" value="Iné" required>
+                    <label for="other">Iné </label><br>
+                    <div id="genderError" class="errorForInput"></div>
+                </div>
+                <div id="weightDiv" class="formElement">
+                    <label for="weight">Váha</label>
+                    <input name="weight" type="text" id="weight" placeholder="70kg" maxlength="20">
+                </div>
+                <div id="heightDiv" class="formElement">
+                    <label for="height">Výška</label>
+                    <input name="height" type="text" id="height" placeholder="170cm" maxlength="20">
+                </div>
+                <div id="differentGenderDiv" class="formElement">
+                    <label for="differentGender">Pohlavie</label>
+                    <input name="differentGender" type="text" id="differentGender" placeholder="Pohlavie" maxlength="30">
+                </div>
+                <div class="formElement">
+                    <label for="age">Vek*</label>
+                    <input name="age" type="number" id="age" placeholder="18" required>
+                    <div id="ageError" class="errorForInput"></div>
+                </div>
+                <div class="formElement">
+                    <label for="date">Dátum Narodenia*</label>
+                    <input name="birthDate" type="date" id="date" onchange="handler(event);" required>
+                    <div id="dateError" class="errorForInput"></div>
+                </div>
+                <div class="formElement">
+                    <button id="textAreaRevealer">Zobraziť meno administrátora</button>
+                    <input type="hidden" id="myName" name="myName" value="Radovan Križanovský" />
+                </div >
+                <div class="formElement">
+                    <label for="note">Poznámka k objednávke</label>
+                    <textarea id="note" name="note" rows="4" cols="100"></textarea>
+                </div>
+            </div>
+            <div id="rightLowerPart" class="customCollums">
+                <div class="formElement">
+                    <label for="formEmail">E-mail*</label>
+                    <input name="userEmail" type="email" id="formEmail" placeholder="meno@email.sk" maxlength="30" required>
+                    <div><small id="emailCharactersNum">(0/30)</small></div>
+                    <div id="emailError" class="errorForInput"></div>
+                </div>
+                <div class="formElement">
+                    <label for="room">Výber miestnosti*</label>
+                    <select name="room" id="room" >
+                    </select> 
+                    <select name="type" id="type" >
+                    </select> 
+                    <select name="additional" id="additional">
+                    </select> 
+                </div>
+                <div class="formElement">
+                    <label for="dateOfEvent">Dátum Akcie*</label>
+                    <input name="dateOfEvent" type="date" id="dateOfEvent" required>
+                </div>
+                <div class="formElement">
+                    <label for="reservationTime">Čas*</label>
+                    <select name="reservationTime" id="reservationTime">
+                        <option value="afternoon">12:00 - 16:00</option>
+                        <option value="evening">17:00 - 00:00</option>
+                        <option value="wholeDay">12:00 - 00:00</option>
+                    </select> 
+                </div>
+                <div class="formElement">
+                    <label for="people">Počet ľudí*</label>
+                    <input name="numOfPeople" type="number" id="people" placeholder="50" required>
+                    <div id="peopleError" class="errorForInput"></div>
+                </div>
+                <div id="checkboxes" class="formElement">
+                    <h3>Farby výzdoby</h3>
+                    <div>
+                        <input type="checkbox" id="white" name="white" value="white" />
+                        <label for="white">Biela</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="black" name="black" value="black" />
+                        <label for="black">Čierna</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="differetColor" name="differenColor" value="differetColor" />
+                        <label for="differetColor">Iná</label>
+                    </div>
+                </div>
+                <div id="differetColorTextDiv" class="formElement">
+                    <label for="differetColorText">Iná farba</label>
+                    <input name="differentColor" type="text" id="differetColorText" placeholder="Bordová" maxlength="40">
+                </div>
+                <div class="formElement">
+                    <div id="telDiv">
+                        <label id="telText" for="prefix">Tel.:*</label>
+                        <select name="telNumPrefix" id="prefix" >
+                            <option value="+421">+421</option>
+                            <option value="+420">+420</option>
+                            <option value="+419">+419</option>
+                            <option value="+418">+418</option>
+                            <option value="+417">+417</option>
+                            <option value="+416">+416</option>
+                            <option value="+415">+415</option>
+                            <option value="+414">+414</option>
+                            <option value="+413">+413</option>
+                            <option value="+412">+412</option>
+                        </select>
+                        <input name="telNumber" type="tel" id="formTel" placeholder="949 111 222" maxlength="20" required>
+                    </div>
+                    <div id="telError" class="errorForInput"></div>
+                </div>
+                <h2 id="finalPrice">Cena: 0 €</h2>
+            </div>
+        </div>
+        <div id="modalDiv">
+        </div>
+    </form>
+    <div id="submitButtonWrapper">
+        <button id="submitButton">Dokončiť objednávku</button>
+    </div> 
+    <script src="js/main.js"></script>
+</body>
+</html>

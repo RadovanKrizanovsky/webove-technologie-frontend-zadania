@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    max-width: 750px;
+    text-align: center;
+    border: black 1px solid;
+}
+
+#dogPicture {
+    float: right;
+}
+
+#secondP {
+    margin: 20px;
+}
+
+p {
+    color: black;
+}
+
+p::first-letter {
+    font-size: 48px;
+}
+
+p:hover:first-letter {
+    color: gray;
+    
+}
+
+p:hover {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 10px;
+    float: left;
+    border: 4px gray dotted;
+}
+
+@media (min-width: 600px) {
+    #texts {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+

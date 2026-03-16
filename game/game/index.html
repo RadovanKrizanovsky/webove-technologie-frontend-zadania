@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popoluška</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <!--<link rel="icon" href="data:;base64,=">-->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window. addEventListener ('load', () => {
+                navigator.serviceWorker.register ('./sw.js');
+            });
+        }
+    </script>
+
+
+
+</head>
+
+<body class="bodyBackground" id="body">
+<nav class="navbar navbarBackground navbar-dark">
+    <div class="container">
+        <a href="" class="navbar-brand">Popoluška</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Hra</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tutorial.html" class="nav-link">Nápoveda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="authors.html" class="nav-link">Autori</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sources.html" class="nav-link">Zdroje</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="text-light pt-5 text-center gameContainer">
+    <div class="container gameContainer">
+        <div class="d-flex justify-content-center align-items-center gameContainer" id="gameContainer">
+
+
+
+            <div id="game" >
+                <div id="counter">0</div>
+                <div id="score">0/100</div>
+                <div id="timerDiv">sec</div>
+
+
+                <div class="bowlDiv" id="bowlDiv">
+                    <!--
+                    <div class="bowlWText">
+                        <img class="bowl" id="bowl" data-x="50" data-y="0" data-content="bean">
+                        <p>Bean</p>
+                    </div>
+                    <div class="bowlWText">
+                        <img class="bowl" data-x="200" data-y="0" data-content="peas">
+                        <p>Peas</p>
+                    </div>
+                    <div class="bowlWText">
+                        <img class="bowl" data-x="200" data-y="0" data-content="peas">
+                        <p>Peas</p>
+                    </div>
+                    -->
+
+
+                </div>
+
+                <div class="itemDiv" id="itemDiv">
+                    <!--
+                    <img class="draggable bean" id="item" data-x="3" data-y="5" data-inBowl="false"/>
+                    <img class="draggable peas" data-x="6" data-y="9" data-inBowl="false"/>
+                    <img class="draggable bean" data-x="9" data-y="1" data-inBowl="false"/>
+                    <img class="draggable peas" data-x="4" data-y="6" data-inBowl="false"/>
+                    <img class="draggable bean" data-x="1" data-y="4" data-inBowl="false"/>
+                    <img class="draggable peas" data-x="11" data-y="2" data-inBowl="false"/>
+                    -->
+                </div>
+
+                <div id="modal"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

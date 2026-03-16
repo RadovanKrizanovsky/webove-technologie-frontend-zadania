@@ -1,0 +1,164 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+#partsWraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#genders {
+    margin: 4vh 0;
+    display: block;
+}
+
+#genders label{
+    width: 95%;
+}
+#genders input{
+    width: 5%;
+}
+
+
+#weightDiv , #heightDiv, #differentGenderDiv{
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formElement {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 0;
+}
+
+input {
+    margin: 2vh;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: 12px 20px;
+}
+
+input[type=text]:focus, input[type=date]:focus, input[type=number]:focus, input[type=email]:focus, input[type=tel]:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid darkgreen;
+}
+
+.customCollums {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;;
+}
+
+#checkboxes {
+    margin: 4vh 0;
+    display: block;
+}
+
+#checkboxes label{
+    width: 95%;
+}
+#checkboxes input{
+    width: 5%;
+}
+
+#differetColorTextDiv {
+    display: none;
+}
+
+#telDiv {
+    display: flex;
+}
+
+#telText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+select {
+    border: none;
+    padding: 10px;
+    background-color: lightgray;
+    margin: 5px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: lightgray;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+
+#submitButtonWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#submitButtonWrapper *{
+    width: 50%;
+    border: none;
+}
+
+#submitButtonWrapper *:hover {
+    background-color: lightgreen;
+}
+
+#modalDiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgb(210,210,210);
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 15px;
+    width: 50%;
+    display: none;
+}
+
+.modalHeader {
+    font-weight: 900;
+    font-size: 25px;
+    display: flex;
+    padding: 10px;
+}
+
+.modaltText {
+    display: flex;
+    padding: 10px;
+}
+
+.modalSubmitButton {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5vmin;
+}
+
+.errorForInput{
+    color: red;
+}
+
+#close {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #partsWraper {
+        flex-direction: column;
+    }
+}

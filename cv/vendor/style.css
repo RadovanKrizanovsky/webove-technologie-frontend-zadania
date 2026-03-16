@@ -1,0 +1,495 @@
+@font-face {
+    src: url(../fonts/Finlandica-VariableFont_wght.ttf);
+    font-family: 'Finlandica';
+}
+
+*{
+    font-family: 'Finlandica', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: #b92b27;
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
+    background: linear-gradient(to right, #1565C0, #b92b27);
+}
+
+header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 15%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#pageName {
+    width: 25%;
+    text-align: center;
+    align-self: center;
+    white-space: nowrap;
+    color: #e5eaf5;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+#headerMargin {
+    width: 15%;
+}
+
+nav {
+    width: 60%;
+    align-self: center;
+}
+
+#horizontalList {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#horizontalList li {
+    list-style: none;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #e5eaf5;
+    text-decoration: none;
+    font-size: 3.2vmin;
+}
+
+a:hover {
+    color: rgb(102, 102, 187);
+}
+
+#rozvrhPopis h2 {
+    margin: 0;
+    font-size: 6vmin;
+    text-align: center;
+    color: #e5eaf5;
+    padding-top: 5vmin;
+}
+
+#rozvrhPopis p {
+    margin: 0;
+    font-size: 2.5vmin;
+    text-align: center;
+    color: #e5eaf5;
+    padding: 3vh 10%;
+}
+
+#scheduleSection {
+    padding-top: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    background-color: #372e3b;
+    white-space: nowrap;
+}
+tr:nth-of-type(even) {
+    background-color: #e5eaf5;
+}
+tr:nth-of-type(odd) {
+    background-color: #d0bdf4;
+}
+.cviko {
+    background-color: #b39ddc;
+}
+.prednaska {
+    background-color: #97f19e;
+}
+.tk {
+    background-color: #fbb3bd;
+}
+
+table {
+    border-spacing: 1px;
+    background-color: #e5eaf5;
+    margin-bottom: 20vh;
+}
+
+td, th {
+    text-align: center;
+    color: #e5eaf5;
+    height: 6vh;
+    width: 6vw;
+    font-size: 1vw;
+    text-shadow: 0 0 2.5px black;
+}
+
+#functionalSection {
+    margin-bottom: 10vh;
+}
+
+#myName {
+    text-align: center;
+    color: #e5eaf5;
+    font-size: calc(7px + 4vmin);
+    margin-bottom: 7vh;
+}
+
+.grayArticle {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    padding: 3vh 3vw;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+}
+.grayArticle p{
+    color: #e5eaf5;
+    font-size: calc(7px + 2.5vmin);
+}
+#mottoPlusText {
+    display: flex;
+}
+
+#mottoPlusText p{
+    width: 70%;
+}
+
+#mottoPlusText aside{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1vmax;
+}
+
+#mottoPlusText aside p{
+    font-size: calc(7px + 2.5vmin);
+    color: #e5eaf5;
+    font-weight: 1000;
+    font-style: italic;
+}
+
+#leftImageDiv {
+    float: left;
+    margin-right: 1.2vw;
+    width: 40vmin;
+    height: 48vmin;
+    min-width: 100px;
+    min-height: 120px;
+}
+
+#myPicture {
+    border-radius: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+.grayArticle ul {
+    list-style: none;
+    color: #e5eaf5;
+    padding-right: 40px;
+
+}
+
+.grayArticle ul li{
+    font-size: 2.5vmin;
+}
+
+#firstListItem h3{
+    font-weight: 1000;
+}
+
+#moonPeople {
+    font-size: 8vmin;
+    color: #e5eaf5;
+    text-align: center;
+}
+
+#imageDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#moon {
+
+    max-width: 100%;
+    height: auto;
+}
+
+#relativeForPins {
+    position: relative;
+}
+
+.landmarkDiv {
+    height: 30vh;
+    width: 10vw;
+    position: absolute;
+}
+
+.pin {
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 4vmin;
+    height: 4vmin;
+    border-radius: 50%;
+    border: 2px solid #e5eaf5;
+}
+
+.info {
+    border: 2px solid #e5eaf5;
+    border-radius: 10%;
+    margin-top: 10px;
+    background-color: rgba(229, 234, 245, 0.1);
+    color: #e5eaf5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h3 {
+    font-size: 3vmin;
+    text-shadow: 1px 1px 1px black;
+}
+
+.info h4 {
+    font-size: 2vmin;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+#apollo15 {
+    left: 47.5%;
+    top: 28%;
+}
+
+#apollo17 {
+    left: 70%;
+    top: 31%;
+}
+
+#apollo11 {
+    left: 68%;
+    top: 51%;
+}
+
+#apollo16 {
+    left: 61%;
+    top: 58%;
+}
+
+#apollo14 {
+    left: 33%;
+    top: 53%;
+}
+
+#apollo12 {
+    left: 26%;
+    top: 53%;
+}
+
+#apollo15info {
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+#apollo15pin:hover + #apollo15info {
+    opacity: 100%;
+    transition: 0.3s linear;
+}
+
+#apollo17info {
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+#apollo17pin:hover + #apollo17info {
+    opacity: 100%;
+    transition: 0.3s linear;
+}
+
+#apollo12info {
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+#apollo12pin:hover + #apollo12info {
+    opacity: 100%;
+    transition: 0.3s linear;
+}
+
+#apollo14info {
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+#apollo14pin:hover + #apollo14info {
+    opacity: 100%;
+    transition: 0.3s linear;
+}
+
+#apollo16info {
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+#apollo16pin:hover + #apollo16info {
+    opacity: 100%;
+    transition: 0.3s linear;
+}
+
+#apollo11info {
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+#apollo11pin:hover + #apollo11info {
+    opacity: 100%;
+    transition: 0.3s linear;
+}
+
+#source {
+    text-align: center;
+}
+
+#source h3{
+    font-size: 5vmin;
+    color: #e5eaf5;
+}
+
+#source a{
+    font-size: 3vmin;
+    color: #e5eaf5;
+    text-decoration: underline;
+}
+
+#cvPositioning {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0;
+}
+
+#cv {
+    width: 65%;
+    display: flex;
+    border-radius: 10%;
+    min-height: 1000px;
+}
+
+#cvLeftSide {
+    height: 100%;
+    width: 30%;
+    background: rgb(245,179,1);
+    text-align: center;
+    color: rgb(30,35,40);
+}
+
+#cvRightSide {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(30,35,40);
+    background: linear-gradient(180deg, rgba(30,35,40,1) 0%, rgba(59,63,70,1) 100%);
+}
+
+#cvLeftImageDiv {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lineSeparation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#lineSeparation div{
+    width: 90%;
+    border-bottom: 3px solid rgb(30,35,40);
+}
+
+#cvLeftUnderImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#cvName {
+    font-size: 3.6vmin;
+}
+
+#contactBig {
+    font-size: 3.2vmin;
+}
+
+.contactSmaller {
+    font-size: 0.9vw;
+}
+
+.boldTextCv {
+    padding-top: 2.5vh;
+    font-weight: bold;
+}
+
+#informations {
+    width: 90%;
+    height: 90%;
+}
+
+.information h2{
+    padding: 1vmin;
+    background-color: rgb(245,179,1);
+    color: rgb(30,35,40);
+    font-size: 5vmin;
+}
+
+.cvLi {
+    color: rgb(245,179,1);
+    font-size: 2.5vmin;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #e5eaf5;
+    position: relative;
+    height: 10vh;
+    min-height: 25px;
+}
+
+footer h3{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-size: calc(7px + 1.5vmin);
+}
+
+@media only screen and (max-width: 600px) {
+    #cv {
+        width: 100%;
+    }
+    #headerMargin {
+        width: 2%;
+    }
+    nav ul li a {
+        margin: 2vw;
+    }
+}

@@ -1,0 +1,155 @@
+{
+  "bowls": [
+    {
+      "content": "redBean"
+    },
+    {
+      "content": "chickpea"
+    },
+    {
+      "content": "lentil"
+    },
+    {
+      "content": "peas"
+    }
+  ],
+  "items": [
+    {
+      "type": "peas",
+      "position":
+      {
+        "x": "250",
+        "y": "200"
+      }
+    },
+    {
+      "type": "peas",
+      "position":
+      {
+        "x": "123",
+        "y": "87"
+      }
+    },
+    {
+      "type": "chickpea",
+      "position":
+      {
+        "x": "327",
+        "y": "200"
+      }
+    },
+    {
+      "type": "lentil",
+      "position":
+      {
+        "x": "20",
+        "y": "231"
+      }
+    },
+    {
+      "type": "peas",
+      "position":
+      {
+        "x": "23",
+        "y": "288"
+      }
+    },
+    {
+      "type": "redBean",
+      "position":
+      {
+        "x": "186",
+        "y": "132"
+      }
+    },
+    {
+      "type": "chickpea",
+      "position":
+      {
+        "x": "186",
+        "y": "132"
+      }
+    }
+  ,
+    {
+      "type": "lentil",
+      "position":
+      {
+        "x": "400",
+        "y": "132"
+      }
+    }
+  ,
+    {
+      "type": "peas",
+      "position":
+      {
+        "x": "500",
+        "y": "132"
+      }
+    }
+  ],
+  "gameSet": [
+    {
+      "difficulty": "easy",
+      "levels": [
+        {
+          "levelOne": {
+            "timer": "22"
+          }
+        },
+        {
+          "levelTwo": {
+            "timer": "19"
+          }
+        },
+        {
+          "levelThree": {
+            "timer": "16"
+          }
+        },
+        {
+          "levelFour": {
+            "timer": "13"
+          }
+        },
+        {
+          "levelFive": {
+            "timer": "10"
+          }
+        }
+      ]
+    },
+    {
+      "difficulty": "hard",
+      "levels": [
+        {
+          "levelOne": {
+            "timer": "13"
+          }
+        },
+        {
+          "levelTwo": {
+            "timer": "11"
+          }
+        },
+        {
+          "levelThree": {
+            "timer": "9"
+          }
+        },
+        {
+          "levelFour": {
+            "timer": "7"
+          }
+        },
+        {
+          "levelFive": {
+            "timer": "5"
+          }
+        }
+      ]
+    }
+
+  ]
+}

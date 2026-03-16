@@ -1,0 +1,84 @@
+{"photos":
+[
+{
+    "fileName": "photos",
+    "photoName": "EifelTowerOne",
+    "pictureDescription": "Obrázok na ktorom je vyfotená Eifelová veža počas jesenného dňa",
+    "date": "01/12/2022/16:30",
+    "gps": "48.85934771539497, 2.2956998441973635",
+    "path": "./photos/EifelTowerOne.jpg"
+},
+{ 
+    "fileName": "photos",
+    "photoName": "EifelTowerTwo",
+    "pictureDescription": "Obrázok na ktorom je vyfotená Eifelová veža počas letného večera",
+    "date": "03/10/2019/11:12",
+    "gps": "48.85934771539497, 2.2956998441973635",
+    "path": "./photos/EifelTowerTwo.jpg"
+},
+{
+    "fileName": "photos",
+    "photoName": "EifelTowerThree",
+    "pictureDescription": "Obrázok na ktorom je vyfotená Eifelová veža počas letného dňa",
+    "date": "01/12/2022/16:30",
+    "gps": "48.85934771539497, 2.2956998441973635",
+    "path": "./photos/EifelTowerThree.jpg"
+},
+{
+    "fileName": "photos",
+    "photoName": "TimesSquare",
+    "pictureDescription": "Známe námestie Times Square ktoré sa nachádza v New Yorku",
+    "date": "03/10/2019/11:12",
+    "gps": "40.75712016039638, -73.98661901475724",
+    "path": "./photos/TimesSquare.jpg"
+},
+{ 
+    "fileName": "photos",
+    "photoName": "Pyramids",
+    "pictureDescription": "Pyramídy v Gize na územi egypta",
+    "date": "01/12/2022/16:30",
+    "gps": "29.978358266655327, 31.13256549230648",
+    "path": "./photos/Pyramids.jpg"
+},
+{
+    "fileName": "photos",
+    "photoName": "LibertyStatueOne",
+    "pictureDescription": "Prvá z piatich fotografií sochy slobody v New Yorku",
+    "date": "03/10/2019/11:12",
+    "gps": "40.689474638124295, -74.04539157147059",
+    "path": "./photos/LibertyStatueOne.jpg"
+},
+{
+    "fileName": "photos",
+    "photoName": "LibertyStatueTwo",
+    "pictureDescription": "Druhá z piatich fotografií sochy slobody v New Yorku",
+    "date": "01/12/2022/16:30",
+    "gps": "40.689474638124295, -74.04539157147059",
+    "path": "./photos/LibertyStatueTwo.jpg"
+},
+{ 
+    "fileName": "photos",
+    "photoName": "LibertyStatueThree",
+    "pictureDescription": "Tretia z piatich fotografií sochy slobody v New Yorku",
+    "date": "03/10/2019/11:12",
+    "gps": "40.689474638124295, -74.04539157147059",
+    "path": "./photos/LibertyStatueThree.jpg"
+},
+{
+    "fileName": "photos",
+    "photoName": "LibertyStatueFour",
+    "pictureDescription": "Štvrtá z piatich fotografií sochy slobody v New Yorku",
+    "date": "01/12/2022/16:30",
+    "gps": "40.689474638124295, -74.04539157147059",
+    "path": "./photos/LibertyStatueFour.jpg"
+},
+{
+    "fileName": "photos",
+    "photoName": "LibertyStatueFive",
+    "pictureDescription": "Piata z piatich fotografií sochy slobody v New Yorku",
+    "date": "03/10/2019/11:12",
+    "gps": "40.689474638124295, -74.04539157147059",
+    "path": "./photos/LibertyStatueFive.jpg"
+}
+]
+}

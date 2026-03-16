@@ -1,0 +1,134 @@
+#counter {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: black;
+    font-size: 3vmin;
+}
+
+#score {
+    position: relative;
+    text-align: right;
+    margin-right: 10px;
+    top: 10px;
+    color: black;
+    font-size: 3vmin;
+}
+
+#modal {
+    margin-top: 45%;
+    margin-bottom: 0;
+}
+
+
+.draggable {
+    touch-action: none;
+    user-select: none;
+    object-fit: cover;
+    width: 30px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.bowl {
+    content: url("../src/bowlNew.png");
+
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 0;
+}
+
+.peas {
+    content: url("../src/peas.png");
+}
+
+.bean {
+    content: url("../src/bean.png");
+}
+
+.pea {
+    content: url("../src/pea.png");
+}
+
+.redBean {
+    content: url("../src/redBean.png");
+}
+
+.chickpea {
+    content: url("../src/chickpea.png");
+}
+
+.lentil {
+    content: url("../src/lentil.png");
+}
+
+.bowlWText {
+    position: relative;
+}
+
+.img {
+    display: block;
+
+}
+
+.centertext {
+    position: absolute;
+    text-align: center;
+
+}
+
+.startButton {
+    content: url("../src/buttonPlay.png");
+}
+
+
+
+#game {
+    height: 80vmin;
+    width: 80vmin;
+    border: black 3px solid;
+    position: relative;
+    background-image: url("../src/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.navbarBackground {
+    background-color: #2377a4 ;
+}
+
+.bodyBackground {
+    background-image: url('../src/vecteezy_snowflakes-background_dy1120.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #game {
+        height: 150vmin;
+        width: 100%;
+    }
+    .gameContainer {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.webTexts {
+    color: #002244;
+}
+
+#modal {
+    display: block;
+}
+
+
